@@ -17,3 +17,13 @@ Models.py: contains class definitions for the encoder and binary classifier pyto
 Preprocessing.py: contains functions for call transcript preprocessing (takes in call transcript and returns an array of cleaned tokenized sentences)
 
 TrainModel.py: contains function to train the model and reports accuracy and loss at each epoch
+
+Yelp files:
+
+dataset_dev.json: JSON file for the dev set of Yelp reviews. Each record contains the preprocessed review body and its classification. 
+
+dataset_test.json: JSON file for the test set of Yelp reviews. Each record contains the preprocessed review body and its classification. 
+
+dataset_train.json: JSON file for the train set of Yelp reviews. Each record contains the preprocessed review body and its classification. 
+
+yelp_preprocessing.py: Preprocesses the Yelp dataset. Takes the original Yelp dataset and creates dev, test, and train dataset JSON files from a subset. Cleans each review as it makes the dataset. Also reports statistics on the subset of the dataset used. NOTE: this script is not part of the model pipeline. It should be run to produce the three JSON files listed above after any changes are made. This script requires yelp_academic_dataset_review.json, which contains the full dataset of Yelp reviews. This can be downloaded from https://www.kaggle.com/yelp-dataset/yelp-dataset. 
