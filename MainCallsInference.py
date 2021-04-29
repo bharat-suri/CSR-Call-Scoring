@@ -24,7 +24,7 @@ else:
   file.close()
 
   prediction = predict(sys.argv[1], encoder, classifier, vocab)
-  print(prediction)
+
   if prediction == 1:
     print("Call predicted as good")
   else:
